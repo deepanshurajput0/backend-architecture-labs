@@ -6,11 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const game_1 = require("./game");
 const logger_1 = __importDefault(require("./logger"));
 setInterval(() => {
-    game_1.game.push({
-        id: Math.random().toString(),
-        whitePlayer: 'Daniel',
-        blackPlayer: 'Parkour',
-        Move: [],
-    });
+    game_1.game.addGame(Math.random().toString());
     (0, logger_1.default)();
 }, 1000);
