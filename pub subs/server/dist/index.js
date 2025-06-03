@@ -13,10 +13,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const http_1 = __importDefault(require("http"));
+const socket_1 = __importDefault(require("./services/socket"));
 function init() {
     return __awaiter(this, void 0, void 0, function* () {
+        const socketService = new socket_1.default();
         const httpServer = http_1.default.createServer();
         const PORT = process.env.PORT ? process.env.PORT : 8080;
+        socketService.io.attach(httpServer);
         httpServer.listen(PORT, () => {
             console.log(`Server started at PORT : ${PORT}`);
         });
