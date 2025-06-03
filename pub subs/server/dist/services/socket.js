@@ -13,7 +13,12 @@ const socket_io_1 = require("socket.io");
 class SocketService {
     constructor() {
         console.log("Init Socket Service");
-        this._io = new socket_io_1.Server();
+        this._io = new socket_io_1.Server({
+            cors: {
+                allowedHeaders: ["*"],
+                origin: "*"
+            }
+        });
     }
     initListners() {
         const io = this._io;
