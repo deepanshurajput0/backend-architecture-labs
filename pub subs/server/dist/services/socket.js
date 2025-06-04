@@ -25,6 +25,7 @@ class SocketService {
                 origin: "*"
             }
         });
+        sub.subscribe('MESSAGES');
     }
     initListners() {
         const io = this._io;
@@ -35,6 +36,11 @@ class SocketService {
                 console.log('New Message Rec.', message);
                 yield pub.publish('MESSAGES', JSON.stringify(message));
             }));
+        });
+        sub.on('message', (channel, message) => {
+            if (channel === 'MESSAGES') {
+                io.emit('message', message);
+            }
         });
     }
     get io() {
