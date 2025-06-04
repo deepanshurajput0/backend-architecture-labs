@@ -8,8 +8,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const socket_io_1 = require("socket.io");
+const ioredis_1 = __importDefault(require("ioredis"));
+const pub = new ioredis_1.default(6379, 'localhost');
+const sub = new ioredis_1.default(6379, 'localhost');
 class SocketService {
     constructor() {
         console.log("Init Socket Service");
@@ -27,6 +33,7 @@ class SocketService {
             console.log(`New Socket Connected`, socket.id);
             socket.on('event:message', (_a) => __awaiter(this, [_a], void 0, function* ({ message }) {
                 console.log('New Message Rec.', message);
+                yield pub.publish('MESSAGES', JSON.stringify(message));
             }));
         });
     }
