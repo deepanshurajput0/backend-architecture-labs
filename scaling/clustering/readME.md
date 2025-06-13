@@ -9,4 +9,5 @@ Node.js runs on a single thread, so:
     Great for scaling your app on a single server.
 
 
-![Screenshot 2025-06-13 125943](https://github.com/user-attachments/assets/cf28ba13-0dc2-4f61-8bc0-a921530aadd9)
+
+![ChatGPT Image Jun 13, 2025, 01_09_37 PM](https://github.com/user-attachments/assets/e58cf0a3-ead5-4699-964b-7465f92de8d2)
