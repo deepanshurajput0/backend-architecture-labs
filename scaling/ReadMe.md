@@ -98,3 +98,11 @@ It is a formal contract or agreement between a **service provider** and a **cust
 If a company uses a cloud service, the SLA might state:
 
 > “The cloud service will be available 99.9% of the time per month. If downtime exceeds this limit, the customer will receive a 10% credit on their bill.”
+
+
+
+# Horizontal Scaling 
+
+Horizontal scaling represents increasing the number of instances you have based on a metric to be able to support more load.
+AWS has the concept of Auto scaling groups, which as the name suggests lets you autoscale the number of machines based on certain metrics.Horizontal scaling represents increasing the number of instances you have based on a metric to be able to support more load.
+AWS has the concept of Auto scaling groups, which as the name suggests lets you autoscale the number of machines based on certain metrics.
