@@ -83,7 +83,7 @@ Four initial universities were connected:
 ![Screenshot 2025-07-09 223459](https://github.com/user-attachments/assets/bf5b2928-01ee-4299-8f8d-9ad147dbb16a)
 
 
-```markdown
+
 # 🧠 How Data Travels Through a Network (From Binary Level) - Networking Notes
 
 > 📚 This guide explains how data (e.g., a message) is sent from one device to another over a network, following the OSI model and diving into binary-level transmission.
