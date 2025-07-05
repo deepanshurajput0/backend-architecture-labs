@@ -309,4 +309,12 @@ A failure in the main cable can bring down the entire network
 <img width="1277" height="680" alt="Screenshot 2025-07-11 204822" src="https://github.com/user-attachments/assets/b830d2d4-31a8-4dce-a001-e815315398ff" />
 
 
+## 2) Ring topology 
+It is a network configuration where each device is connected to exactly two other devices forming closed loop or circular structure. In this setup, data travels from one device to next around the ring, passing through each intermediate device until it reaches its destination.  
+
+Disadvantages:
+Network failure if a single device or connection breaks (in unidirectional rings), and challenges in adding and removing devices.
+
+<img width="915" height="752" alt="Screenshot 2025-07-11 210750" src="https://github.com/user-attachments/assets/265e0fb3-a619-49ce-80d3-c0087addc9e9" />
+
 
