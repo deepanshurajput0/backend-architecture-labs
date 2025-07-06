@@ -318,3 +318,8 @@ Network failure if a single device or connection breaks (in unidirectional rings
 <img width="915" height="752" alt="Screenshot 2025-07-11 210750" src="https://github.com/user-attachments/assets/265e0fb3-a619-49ce-80d3-c0087addc9e9" />
 
 
+## 3) Star topology
+It is a type of network configuration where every device or (node) is individually connected to a single central hub, switch, or router. It is widely used in homes, offices, schools, and other environments due to its reliability.
+
+<img width="952" height="673" alt="Screenshot 2025-07-11 212724" src="https://github.com/user-attachments/assets/d5786617-5f1c-412d-ba71-231b14bb7759" />
+
