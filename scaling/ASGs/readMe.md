@@ -59,7 +59,10 @@ Automatically runs when a new EC2 instance is created.
 
 # ⚖️ LOAD BALANCER + TARGET GROUP
 
+
+
 ##  Load Balancer (ELB)
+
 
 Distributes traffic evenly across EC2 instances.
 
