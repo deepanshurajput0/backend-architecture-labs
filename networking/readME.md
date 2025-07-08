@@ -333,3 +333,10 @@ Disadvantage:
 
 <img width="1187" height="780" alt="Screenshot 2025-07-11 213850" src="https://github.com/user-attachments/assets/c74e6f5f-3b81-492c-98fd-9e88c68545bc" />
 
+## 5) Tree topology
+Tree topology is a type of network topology that combines characteristics of star and bus topologies. It resembles a hierarchical structure—like a tree—with branches of star networks connected to a main backbone line.
+
+<img width="1475" height="746" alt="Screenshot 2025-07-11 223713" src="https://github.com/user-attachments/assets/18997350-6c29-48f2-bb15-a10e3e373857" />
+
+
+
