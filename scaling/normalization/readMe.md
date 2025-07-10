@@ -28,6 +28,8 @@ You aim to reach 3NF/BCNF usually. The lower you go, the more normalised your ta
 A single cell must not hold more than one value (atomicity): This rule ensures that each column of a database table holds only atomic (indivisible) values, and multi-valued attributes are split into separate columns. For example, if a column is meant to store phone numbers, and a person has multiple phone numbers, each number should be in a separate row, not as a list or set in a single cell.
 
 
+<img width="1662" height="776" alt="Screenshot 2025-07-13 222648" src="https://github.com/user-attachments/assets/9cdd636c-13fd-4397-8c26-4f132c771bc2" />
+
 
 
 
