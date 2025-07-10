@@ -1,11 +1,6 @@
 
-# 🌐 Networking Notes – What is Internet?
+# 🌐 Networking Notes
 
-This repository contains my personal notes on computer networking, focusing on the origin and basics of the Internet.
-
----
-
-## 📝 Notes
 
 ### What is Internet
 
