@@ -6,6 +6,9 @@
 
 The internet is a global network of computers and other electronic devices that are connected together, allowing them to communicate, share information, and access services.
 
+![Screenshot 2025-07-09 223459](https://github.com/user-attachments/assets/bf5b2928-01ee-4299-8f8d-9ad147dbb16a)
+
+
 ---
 
 ### History of internet 
@@ -77,6 +80,6 @@ Four initial universities were connected:
 | 3 | UCSB (University of California, Santa Barbara) | Santa Barbara, CA |
 | 4 | University of Utah | Salt Lake City, UT |
 
----
+![Screenshot 2025-07-09 222654](https://github.com/user-attachments/assets/27c90f5d-b97e-4fea-8901-b0a1ae087b59)
 
 
