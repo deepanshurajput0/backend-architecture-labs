@@ -306,8 +306,7 @@ Disadvantages:
 Performance degrades as more devices are added or as the cable length increases.
 A failure in the main cable can bring down the entire network
 
-![Uploading Screenshot 2025-07-11 204822.png…]()
-
+<img width="1277" height="680" alt="Screenshot 2025-07-11 204822" src="https://github.com/user-attachments/assets/b830d2d4-31a8-4dce-a001-e815315398ff" />
 
 
 
