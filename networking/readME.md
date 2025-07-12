@@ -238,6 +238,60 @@ Physical → Data Link → Network → Transport → Session → Presentation �
 > A simple "Hi" message travels across multiple layers, turns into binary, becomes packets, and journeys across routers and servers to reach your friend — all in milliseconds!
 
 
+# 🌐 Types of Computer Networks – Notes
 
+This document explains all the **main types of computer networks**, simply and clearly, with real-world examples and a summary table.
+
+---
+
+## 🔹 1. PAN (Personal Area Network)
+
+- **Definition:** A very small network used for connecting devices around a single person.
+- **Range:** ~10 meters
+- **Examples:**
+  - Bluetooth connection between your phone and wireless earbuds.
+  - USB connection between a computer and printer.
+
+---
+
+## 🔹 2. LAN (Local Area Network)
+
+- **Definition:** A network that connects computers and devices within a small area like a home, school, or office.
+- **Range:** Typically limited to a building or campus.
+- **Examples:**
+  - School or college computer lab.
+  - Office network connecting computers and printers.
+- **Tech Used:** Ethernet, Wi-Fi
+
+---
+
+## 🔹 3. WLAN (Wireless Local Area Network)
+
+- **Definition:** Similar to LAN but uses wireless communication (Wi-Fi).
+- **Examples:**
+  - Wi-Fi network in a home or cafe.
+- **Note:** WLAN is just a type of LAN that’s wireless.
+
+---
+
+## 🔹 4. MAN (Metropolitan Area Network)
+
+- **Definition:** Covers a larger area than LAN, usually spans a city.
+- **Examples:**
+  - City-wide Wi-Fi.
+  - Cable TV network within a city.
+- **Used By:** Universities, government buildings, ISPs.
+
+---
+
+## 🔹 5. WAN (Wide Area Network)
+
+- **Definition:** Covers a very large area, like a country or the whole world.
+- **Examples:**
+  - The Internet (biggest example).
+  - Bank ATM networks across multiple cities.
+- **Note:** WANs use leased telecom lines and satellite links.
+
+---
 
 
