@@ -297,11 +297,17 @@ This document explains all the **main types of computer networks**, simply and c
 
 
 
-## Topologies
+# Topologies
 
-### What is Bus topology
+## 1) What is Bus topology
 It is a network configuration where all devices are connected to a single central cable known as the bus or backbone. Each device taps into this cable to sends and receive data.
 
 Disadvantages:
 Performance degrades as more devices are added or as the cable length increases.
 A failure in the main cable can bring down the entire network
+
+![Uploading Screenshot 2025-07-11 204822.png…]()
+
+
+
+
