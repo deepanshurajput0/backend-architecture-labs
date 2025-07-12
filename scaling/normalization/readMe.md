@@ -53,4 +53,6 @@ If a non-key column depends only on part of a composite key, not the full key â€
 
 To fix it, move such columns to a new table where their dependency is on a single key (not a composite one).
 
+<img width="1777" height="796" alt="Screenshot 2025-07-13 231027" src="https://github.com/user-attachments/assets/2cc8914c-d240-4303-a19b-ce539ecf7ec1" />
+
 
