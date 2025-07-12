@@ -323,3 +323,13 @@ It is a type of network configuration where every device or (node) is individual
 
 <img width="952" height="673" alt="Screenshot 2025-07-11 212724" src="https://github.com/user-attachments/assets/d5786617-5f1c-412d-ba71-231b14bb7759" />
 
+
+## 4) Mesh topology
+It is a network configuration where each device (node) is connected directly to multiple other devices, creating a web-like structure with multiple paths for data to travel. This design provides high redundancy and reliability because data can take several routes to react its destination.
+
+Disadvantage: 
+: Implementing a mesh network requires a large number of cables and network interfaces, making it significantly more expensive than other topologies
+: Setting up, configuring, and maintaining a mesh network is complex, especially as the number of nodes increases. Each new node must be connected to every other node, which becomes increasingly difficult to manage.
+
+<img width="1187" height="780" alt="Screenshot 2025-07-11 213850" src="https://github.com/user-attachments/assets/c74e6f5f-3b81-492c-98fd-9e88c68545bc" />
+
