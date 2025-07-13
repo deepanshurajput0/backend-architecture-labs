@@ -56,3 +56,76 @@ To fix it, move such columns to a new table where their dependency is on a singl
 <img width="1777" height="796" alt="Screenshot 2025-07-13 231027" src="https://github.com/user-attachments/assets/2cc8914c-d240-4303-a19b-ce539ecf7ec1" />
 
 
+## What is 3NF
+
+
+1. Table must be in **2NF**
+2. **No transitive dependency**
+
+---
+
+### 🧠 What is a *transitive dependency*?
+
+Let’s explain using an easy analogy.
+
+---
+
+### 👇 Real-life Example:
+
+| StudentID | StudentName | DepartmentID | DepartmentName   |
+| --------- | ----------- | ------------ | ---------------- |
+| 1         | Alice       | D01          | Computer Science |
+| 2         | Bob         | D02          | Mathematics      |
+
+* **Primary Key** = `StudentID`
+* ✅ `StudentName` depends on `StudentID` → good.
+* ✅ `DepartmentID` also depends on `StudentID` → good.
+
+But...
+
+### ❌ `DepartmentName` depends on `DepartmentID`,
+
+which in turn depends on `StudentID` ➝ **transitive dependency** ❌
+
+> In short:
+> `StudentID ➝ DepartmentID ➝ DepartmentName`
+> So, `StudentID ➝ DepartmentName` **indirectly**, which is not allowed in 3NF.
+
+---
+
+## ✅ 3NF Rule (In Simple Words):
+
+> **Every non-key column** should depend **only on the primary key**, and **not on another non-key column**.
+
+---
+
+### ✅ How to Fix (Make it 3NF)?
+
+Split the table into two:
+
+1. **Students Table**
+   \| StudentID | StudentName | DepartmentID |
+   \|-----------|--------------|---------------|
+   \| 1         | Alice        | D01           |
+
+2. **Departments Table**
+   \| DepartmentID | DepartmentName        |
+   \|---------------|------------------------|
+   \| D01           | Computer Science      |
+
+Now:
+
+* `DepartmentName` depends directly on `DepartmentID` (its own primary key) ✅
+* In `Students` table, everything depends only on `StudentID` ✅
+
+---
+
+## ✅ Summary Table
+
+| **Form** | **Fixes**                                                                    |
+| -------- | ---------------------------------------------------------------------------- |
+| **1NF**  | No repeating groups or multi-values                                          |
+| **2NF**  | No partial dependencies (with composite key)                                 |
+| **3NF**  | No transitive dependencies (non-key columns must depend only on primary key) |
+
+---
