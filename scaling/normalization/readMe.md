@@ -127,5 +127,3 @@ Now:
 | **1NF**  | No repeating groups or multi-values                                          |
 | **2NF**  | No partial dependencies (with composite key)                                 |
 | **3NF**  | No transitive dependencies (non-key columns must depend only on primary key) |
-
----
