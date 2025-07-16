@@ -21,3 +21,11 @@ WebRTC is a peer to peer protocol. This means the you directly send your media o
 <img width="1428" height="612" alt="Screenshot 2025-07-16 114106" src="https://github.com/user-attachments/assets/31ba96be-5273-412f-851e-a33ba8c97bce" />
 
 You do need a central server for signalling and sometimes for sending media as well (turn). We’ll be discussing this later
+
+
+## Signalling 
+
+Both the browsers need to exchange their address before they can start talking to each other. A signaling server is used for that. 
+It is usually a websocket server but can be anything (http)
+
+
