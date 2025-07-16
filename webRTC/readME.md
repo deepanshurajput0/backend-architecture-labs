@@ -36,4 +36,6 @@ It is usually a websocket server but can be anything (http)
 ## Stun (Session Traversal Utilities for NAT)
 It gives you back your publically accessable IPs. It shows you how the world sees you
 
+<img width="1536" height="1024" alt="ChatGPT Image Jul 16, 2025, 11_53_49 AM" src="https://github.com/user-attachments/assets/00de082c-c399-44c9-afde-25637d8798d2" />
+
 
