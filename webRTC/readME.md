@@ -64,6 +64,31 @@ When two devices want to talk (peer-to-peer), they need to figure out:
 
 ICE helps gather and test all possible routes and then chooses the best working path.
 
+## What is TURN Server 
+
+A TURN server (Traversal Using Relays around NAT) is a server that helps two peers communicate when a direct peer-to-peer (P2P) connection is not possible due to strict firewalls or NAT (Network Address Translation).
+
+🔄 The ICE process usually tries:
+
+    Host candidate → direct local IP
+
+    Server Reflexive candidate → via STUN (public IP)
+
+    Relay candidate → via TURN server
+
+If the first two fail, it uses TURN.
+
+## 🚑 That’s where TURN comes in:
+
+A TURN server acts like a middleman/relay:
+
+    You send your video/audio to the TURN server.
+
+    TURN server forwards it to the other peer.
+
+    And vice versa.
+
+This is not peer-to-peer, but it ensures the call still works.
 
 
 
