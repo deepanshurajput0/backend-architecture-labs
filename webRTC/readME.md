@@ -39,4 +39,31 @@ It gives you back your publically accessable IPs. It shows you how the world see
 <img width="1270" height="801" alt="Screenshot 2025-07-16 112231" src="https://github.com/user-attachments/assets/da6c8a8a-2d29-4859-a244-494781ef101c" />
 
 
+## Ice candidates
+ICE (Interactive Connectivity Establishment) candidates are potential networking endpoints that WebRTC uses to establish a connection between peers. Each candidate represents a possible method for two devices (peers) to communicate, usually in the context of real-time applications like video calls, voice calls, or peer-to-peer data sharing.
+
+An ICE candidate is a potential network path that can be used to establish a connection between two peers. These are combinations of:
+
+    IP address
+
+    Port number
+
+    Transport protocol (UDP/TCP)
+
+Each ICE candidate represents one possible way to send and receive data.
+
+## Why do we need ICE candidates?
+
+When two devices want to talk (peer-to-peer), they need to figure out:
+
+    Which IP address to use (public or private)?
+
+    Is there a firewall or NAT blocking direct connection?
+
+    Do we need help from STUN or TURN servers?
+
+ICE helps gather and test all possible routes and then chooses the best working path.
+
+
+
 
