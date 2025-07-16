@@ -31,3 +31,9 @@ It is usually a websocket server but can be anything (http)
 <img width="1275" height="712" alt="Screenshot 2025-07-16 115019" src="https://github.com/user-attachments/assets/f1392573-00b0-4db8-a8fc-17470a3ff5b1" />
 
 
+
+
+## Stun (Session Traversal Utilities for NAT)
+It gives you back your publically accessable IPs. It shows you how the world sees you
+
+
