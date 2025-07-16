@@ -28,4 +28,6 @@ You do need a central server for signalling and sometimes for sending media as w
 Both the browsers need to exchange their address before they can start talking to each other. A signaling server is used for that. 
 It is usually a websocket server but can be anything (http)
 
+<img width="1275" height="712" alt="Screenshot 2025-07-16 115019" src="https://github.com/user-attachments/assets/f1392573-00b0-4db8-a8fc-17470a3ff5b1" />
+
 
