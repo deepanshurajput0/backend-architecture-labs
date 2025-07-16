@@ -18,5 +18,6 @@ Examples include
 
 WebRTC is a peer to peer protocol. This means the you directly send your media over to the other person without the need of a central server
 
+<img width="1428" height="612" alt="Screenshot 2025-07-16 114106" src="https://github.com/user-attachments/assets/31ba96be-5273-412f-851e-a33ba8c97bce" />
 
 You do need a central server for signalling and sometimes for sending media as well (turn). We’ll be discussing this later
