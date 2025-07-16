@@ -95,3 +95,12 @@ This is not peer-to-peer, but it ensures the call still works.
 
 
 
+## SDP - Session description protocol
+A single file that contains all your 
+
+    ice candidates
+
+    what media you want to send, what protocols you’ve used to encode the media
+
+This is the file that is sent in the offer and received in the answer
+
