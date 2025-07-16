@@ -90,5 +90,8 @@ A TURN server acts like a middleman/relay:
 
 This is not peer-to-peer, but it ensures the call still works.
 
+<img width="1335" height="687" alt="Screenshot 2025-07-16 121214" src="https://github.com/user-attachments/assets/d55e7c21-0051-49c1-98c8-58d96ec958b7" />
+
+
 
 
