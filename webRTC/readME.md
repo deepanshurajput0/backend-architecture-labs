@@ -143,3 +143,8 @@ It’s mostly used in video conferencing systems where you want to reduce client
 
     It sends this single mixed stream back to each participant.
 
+    
+<img width="1536" height="1024" alt="ChatGPT Image Jul 17, 2025, 12_26_45 PM" src="https://github.com/user-attachments/assets/e59e248a-2c8f-4c9f-b4a4-72459c83b91b" />
+
+    
+
