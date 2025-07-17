@@ -121,4 +121,8 @@ a=candidate:4 1 UDP 41819902 10.1.1.1 3478 typ relay raddr 93.184.216.34 rport 4
 
 
 ## SFU
+
 SFU stands for Selective forwarding unit.  This acts as a central media server which forwards packets b/w users
+
+<img width="1537" height="763" alt="Screenshot 2025-07-17 120504" src="https://github.com/user-attachments/assets/241d0e12-80b0-406f-bf78-f3e99f5ceceb" />
+
