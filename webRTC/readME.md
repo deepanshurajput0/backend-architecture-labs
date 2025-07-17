@@ -126,3 +126,20 @@ SFU stands for Selective forwarding unit.  This acts as a central media server w
 
 <img width="1537" height="763" alt="Screenshot 2025-07-17 120504" src="https://github.com/user-attachments/assets/241d0e12-80b0-406f-bf78-f3e99f5ceceb" />
 
+
+
+## What is an MCU (Multipoint Control Unit)?
+
+An MCU is a type of media server that receives media streams from all participants, processes them (mixes them), and sends back a single combined stream to each client.
+
+It’s mostly used in video conferencing systems where you want to reduce client-side load and network usage.
+
+
+## How MCU Works:
+
+    Each participant sends their audio/video stream to the MCU server.
+
+    The MCU decodes, mixes, and re-encodes all streams into one unified stream (usually a grid of all video feeds).
+
+    It sends this single mixed stream back to each participant.
+
