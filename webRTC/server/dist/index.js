@@ -6,7 +6,7 @@ let senderSocket = null;
 let receiverSocket = null;
 wss.on('connection', function connection(ws) {
     ws.on('error', console.error);
-    console.log(ws);
+    //  console.log(ws);
     ws.on('message', function message(data) {
         const message = JSON.parse(data);
         if (message.type === 'sender') {
@@ -25,16 +25,19 @@ wss.on('connection', function connection(ws) {
             receiverSocket === null || receiverSocket === void 0 ? void 0 : receiverSocket.send(JSON.stringify({ type: 'createOffer', sdp: message.sdp }));
         }
         else if (message.type === 'createAnswer') {
-            if (ws !== senderSocket) {
+            if (ws !== receiverSocket) {
                 return;
             }
             console.log("answer received");
-            senderSocket.send(JSON.stringify({ type: 'createAnswer', sdp: message.sdp }));
+            senderSocket === null || senderSocket === void 0 ? void 0 : senderSocket.send(JSON.stringify({ type: 'createAnswer', sdp: message.sdp }));
         }
-        else if (message.type === 'icecandidate') {
+        else if (message.type === 'iceCandidate') {
             if (ws === senderSocket) {
+                receiverSocket === null || receiverSocket === void 0 ? void 0 : receiverSocket.send(JSON.stringify({ type: 'iceCandidate', candidate: message.candidate }));
+            }
+            else if (ws === receiverSocket) {
+                senderSocket === null || senderSocket === void 0 ? void 0 : senderSocket.send(JSON.stringify({ type: 'iceCandidate', candidate: message.candidate }));
             }
         }
     });
-    ws.send("something");
 });
