@@ -1,8 +1,8 @@
-syntax = "proto"
+syntax = "proto3";
 
-message Person{
+message Person {
   string name = 1;
-  int age = 2;
+  int32 age = 2;
 }
 
 
