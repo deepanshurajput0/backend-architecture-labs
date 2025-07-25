@@ -16,4 +16,4 @@ service AddressBookService {
 
 message GetPersonByNameRequest {
   string name = 1;
-}
+} 
