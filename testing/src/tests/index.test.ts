@@ -1,9 +1,15 @@
-import { describe, test, expect } from '@jest/globals'
-import { sum } from '../index'
-
+import { describe, it, expect } from '@jest/globals'
+import request = require('supertest')
+import { app } from '..'
 describe('sum of numbers',()=>{
-    test('adds 1+2 is equals to 3',()=>{
-        expect(sum(2,3)).toBe(5)
+    it('should return the sum of 2 numbers',async()=>{
+      const res = await request(app).post('/sum').send({
+        a:2,
+        b:3,
+      })
+      expect(res.statusCode).toBe(200)
+      expect(res.body.ans).toBe(5)
     })
+    
 })
 
