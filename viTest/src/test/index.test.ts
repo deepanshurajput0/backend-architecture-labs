@@ -3,9 +3,7 @@ import { app } from '..'
 import request from 'supertest'
 
 
-vi.mock('../db',()=>({
-  prismaClient:{sum:{create:vi.fn()}}
-}))
+vi.mock('../db')
 
 describe('Tests the sum',()=>{
   it('sum of a and b should be 5',async()=>{
