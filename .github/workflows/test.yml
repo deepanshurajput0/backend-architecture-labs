@@ -27,6 +27,9 @@ jobs:
 
     - name: Copy .env.example to .env
       run: cp "./Integration Testing/.env.example" "./Integration Testing/.env"
+      
+    - name: Make run-integration.sh executable
+      run: chmod +x "Integration Testing/scripts/run-integration.sh"
 
     - name: Run integration script
       run: cd "Integration Testing" && npm run test:integration
