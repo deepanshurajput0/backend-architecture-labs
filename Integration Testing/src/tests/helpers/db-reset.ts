@@ -7,3 +7,5 @@ export async function cleardb(){
     prisma.request.deleteMany()
 
 }
+
+
