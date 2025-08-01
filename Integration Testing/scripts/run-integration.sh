@@ -9,4 +9,4 @@ cd "Integration Testing"
 
 npx prisma migrate dev --name init4
 npm run test
-docker-compose down
+docker compose down
