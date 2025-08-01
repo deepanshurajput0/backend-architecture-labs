@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -11,9 +11,18 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.13.0",
+    "@prisma/client": "^5.22.0",
     "@types/express": "^5.0.3",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "prisma": "^6.13.0"
+    "prisma": "^5.10.1"
+  },
+  "devDependencies": {
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.4",
+    "vitest": "^3.2.4"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
   }
 }
