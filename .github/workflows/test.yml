@@ -13,23 +13,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
-    - name: Set up Docker Compose
-      uses: docker/setup-qemu-action@v2
+      - name: Set up Docker
+        uses: docker/setup-qemu-action@v2
 
-    - name: Ensure Docker Compose is available
-      run: docker compose version
+      - name: Install Docker Compose (legacy `docker-compose`)
+        run: |
+          sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+          docker-compose --version
 
-    - name: Copy .env.example to .env
-      run: cp "./Integration Testing/.env.example" "./Integration Testing/.env"
+      - name: Copy .env.example to .env
+        run: cp "./Integration Testing/.env.example" "./Integration Testing/.env"
 
-    - name: Make run-integration.sh executable
-      run: chmod +x "./Integration Testing/scripts/run-integration.sh"
+      - name: Make run-integration.sh executable
+        run: chmod +x "./Integration Testing/scripts/run-integration.sh"
+
+      - name: Run integration script
+        run: ./Integration\ Testing/scripts/run-integration.sh
+
 
     - name: Run integration script
       run: cd "Integration Testing" && npm run test:integration
