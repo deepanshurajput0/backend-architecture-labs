@@ -1,0 +1,7 @@
+What is Shell Scripting ?
+
+Shell scripts consists of set of commands to perfom a task 
+
+Some task like file manipulation,program execution, user interaction, automation of task etc
+
+
