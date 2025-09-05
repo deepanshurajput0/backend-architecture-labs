@@ -1,27 +1,38 @@
 #!/bin/bash 
 
+set -e
+
+GITHUB_URL="https://github.com/deepanshurajput0/React-Project-For-Deployment.git"
+PROJECT_PATH="React-Project-For-Deployment"
+
 
 cloneRepo(){
-	echo "Project Cloning..."
-	git clone https://github.com/deepanshurajput0/React-Project-For-Deployment.git
-	echo "Project Cloned successfully..."
+	if [ -d $PROJECT_PATH ]; then
+		echo "Project already exists"
+		cd $PROJECT_PATH
+		git pull
+		cd ..
+	else
+		echo "Cloning Project..."
+		git clone $GITHUB_URL
+	fi
+	echo "Project Ready."
 }
 
 installDependencies(){
-	cd React-Project-For-Deployment
-	echo "Installing all dependencies..."
-	npm install 
-	echo "dependencies installed successfully"
+	cd "$PROJECT_PATH"
+	npm install
+	echo "All dependencies installed successfully..."
+
 }
 
 run(){
-	echo "Running my react app..."
-	npm run dev
-}
+	echo "Running the project"
+	npm run dev 
 
+}
 
 cloneRepo
 installDependencies
 run
-
 
